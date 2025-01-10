@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Data App - JSONPlaceholder API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- Swiper JS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body> 
+
+    <i class="ri-info-i" id="open__guide" onclick="openGuide()"></i>
+
+    <div class="guide__screen">
+        <div class="guide">
+            <i class="ri-close-line" id="close__guide" onclick="closeGuide()"></i>
+            
+            <ul class="content__list">
+                <p class="app__desc">You can use this app <strong>whenever you need some fake data.</strong> It's free, clear and useful.</p>
+                
+                <ul class="app__clarifications">
+                    <span>The app comes with a set of 6 common resources:</span>
+                    <li>100 Posts</li>
+                    <li>500 Comments</li>
+                    <li>100 Albums</li>
+                    <li>5000 Photos</li>
+                    <li>10 Users</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <header class="app__controls">
+        <ul class="controls__list">
+            <li class="controls__item" data-limit="100"  data-resource="posts">
+                <i class="ri-draft-line"></i>
+                <span>Posts</span>
+            </li>
+
+            <li class="controls__item" data-limit="500"  data-resource="comments">
+                <i class="ri-message-2-fill"></i>
+                <span>Comments</span>
+            </li>
+
+            <li class="controls__item" data-limit="100"  data-resource="albums">
+                <i class="ri-album-fill"></i>
+                <span>Albums</span>
+            </li>
+
+            <li class="controls__item" data-limit="5000"  data-resource="photos">
+                <i class="ri-image-fill"></i>
+                <span>Photos</span>
+            </li>
+
+            <li class="controls__item" data-limit="200"  data-resource="todos">
+                <i class="ri-todo-fill"></i>
+                <span>Todos</span>
+            </li>
+
+            <li class="controls__item" data-limit="10" data-resource="users">
+                <i class="ri-group-fill"></i>
+                <span>Users</span>
+            </li>
+        </ul>
+    </header>
+
+    <main class="app__container">
+        <div class="app__area">
+            <input type="number" id="number__input" placeholder="Enter how many stuff..." min="1" max="100">
+            <button id="data__getter">Get Fake Data</button>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper" id="results"></div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </main>
+
+    <div id="status__box"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/initialize.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
