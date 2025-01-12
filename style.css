@@ -441,12 +441,14 @@ body {
 /* Responsive Codes */
 @media screen and (max-width: 768px) {
     .app__container .app__area { width: 90%; }
-    
-    .app__container .swiper { width: 100%; }
 
+    .app__container #results #photo__card .photo__content .photo__holder #copy__path { opacity: 1; }
+
+    .app__container .swiper { width: 100%; }
+    
     .swiper-pagination-bullet {
-        width: 12px !important;
-        height: 12px !important;
+        width: 11px !important;
+        height: 11px !important;
     }
 }
 
