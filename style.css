@@ -441,7 +441,13 @@ body {
 /* Responsive Codes */
 @media screen and (max-width: 768px) {
     .app__container .app__area { width: 90%; }
+    
     .app__container .swiper { width: 100%; }
+
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+    }
 }
 
 @media screen and (max-width: 475px) {
