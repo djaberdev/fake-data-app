@@ -358,7 +358,7 @@ body {
     border-radius: 4px;
 }
 
-.app__container #results #photo__card .photo__content .photo__holder #copy__path {
+.app__container #results #photo__card .photo__content .photo__holder #download__photo {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -366,18 +366,18 @@ body {
     height: 28px;
     background-color: #eee;
     border-radius: 0 0 4px 0;
-    font-size: 18px;
-    color: #444;
+    font-size: 20px;
+    color: #555;
     cursor: pointer;
     transition: var(--main-transition);
     opacity: 0;
 }
 
-.app__container #results #photo__card .photo__content .photo__holder:hover #copy__path {
+.app__container #results #photo__card .photo__content .photo__holder:hover #download__photo {
     opacity: 1;
 }
 
-.app__container #results #photo__card .photo__content .photo__holder #copy__path:hover {
+.app__container #results #photo__card .photo__content .photo__holder #download__photo:hover {
     color: #000;
 }
 
@@ -442,7 +442,7 @@ body {
 @media screen and (max-width: 768px) {
     .app__container .app__area { width: 90%; }
 
-    .app__container #results #photo__card .photo__content .photo__holder #copy__path { opacity: 1; }
+    .app__container #results #photo__card .photo__content .photo__holder #download__photo { opacity: 1; }
 
     .app__container .swiper { width: 100%; }
     
