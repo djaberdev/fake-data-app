@@ -159,9 +159,12 @@ function displayPhotos(data) {
             <div class="swiper-slide results__item" id="photo__card">
                 <span class="item__id">${photoId < 10 ? `0${photoId}` : photoId}</span>
                 <div class="photo__content">
-                <h3 class="title">${title}</h3>
-                <div class="photo__holder">
-                        <i class="ri-file-copy-2-fill" id="copy__path" onclick="copyPhotoPath(this)"></i>
+                    <h3 class="title">${title}</h3>
+                    <div class="photo__holder">
+                        <!-- <i class="ri-file-copy-2-fill" id="copy__path" onclick="copyPhotoPath(this)"></i> -->
+                        <a href="${thumbnailUrl}" download="" id="download__photo">
+                            <i class="ri-download-cloud-fill"></i>
+                        </a>
                         <img src="${thumbnailUrl}" alt="Photo">
                     </div>
                 </div>
@@ -284,6 +287,10 @@ const closeGuide = () => { guideScreen.classList.remove('show') };
 
 const statusBox = document.getElementById('status__box');
 
+/*
+
+! This function is stoped because i add the ability to download the photo not copy its path (URL)
+
 function copyPhotoPath(copyBtn) {
 
     // Get The Photo Element
@@ -330,6 +337,8 @@ function copyPhotoPath(copyBtn) {
     });
     
 };
+
+*/
 
 /* -- Save & Manage Data In Local Storage -- */
 
